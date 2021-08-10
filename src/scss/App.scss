@@ -1,0 +1,115 @@
+@import "~bootstrap/scss/bootstrap";
+@import 'style/_variables';
+@import 'style/_mixins';
+
+h1 {
+  color: $color-dark-gray;
+  font-size: 22px;
+  font-weight: normal;
+  padding: 10px 15px 0px;
+}
+h2 {
+  color: $colo-blue;
+  font-size: 16px;
+  width: 100%;
+}
+p {
+  color: $color-dark-gray;
+  font-size: 12px;
+}
+.btn {
+  border: none;
+}
+.btn-primary {
+  background-color: $color-green;
+}
+.modal-content {
+  padding: 20px;
+}
+#logo {
+  margin-left: 12px;
+  margin-top: 20px;
+  width: 50%;
+}
+.container-fluid {
+  padding: 0px !important;
+  margin: 0px;
+  
+}
+#side-bar {
+  background-color: $color-navy-blue;
+  height: 100vh;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  width: 50px;
+}
+#main-container {
+  float: left;
+  padding-left: 50px;
+  background: $color-gray;
+  min-height: 100vh;
+  width: 100%;
+}
+#search-bar {
+  background-color: white;
+  padding: 20px;
+}
+#grid-container {
+  padding-left: 20px;
+}
+.v-card {
+  background-color: $color-white;
+  float: left;
+  margin: 10px;
+  padding: 25px;
+  width: 250px;
+  min-height: 250px;
+  @include border_radius(0, 20px, 0, 0);
+  .link {
+    font-size: 10px;
+  }
+  .description {
+    min-height: 100px;
+  }
+  .tag {
+    background-color: $color-gray;
+    color: rgba($color: #000000, $alpha: 0.7);
+    font-size: 14px;
+    margin-right: 10px;
+    padding: 2px 10px;
+    @include border_radius(10px, 10px, 10px, 10px);
+  }
+  .button {
+    background-color: $color-white;
+    border: none;
+    float: right;
+    margin-left: 10px;
+    padding: 3px;
+    width: 20px;
+    img {
+      width: 100%
+    }
+  }
+}
+.v-shadow {
+  @include shadow(3px, 4px, 4px, 2px, 0.1);
+}
+#add-button {
+  background-color: $color-green;
+  bottom: 30px;
+  cursor: pointer;
+  height: 60px;
+  position: absolute;
+  right: 30px;
+  width: 60px;
+  @include border_radius(60px, 60px, 60px, 60px);
+  span {
+    color: $color-white;
+    font-size: 25px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

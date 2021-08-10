@@ -1,0 +1,20 @@
+@mixin border_radius($tl, $tr, $br, $lr) {
+    -webkit-border-top-left-radius: $tl;
+    -webkit-border-top-right-radius: $tr;
+    -webkit-border-bottom-right-radius: $br;
+    -webkit-border-bottom-left-radius: $lr;
+    -moz-border-radius-topleft: $tl;
+    -moz-border-radius-topright: $tr;
+    -moz-border-radius-bottomright: $br;
+    -moz-border-radius-bottomleft: $lr;
+    border-top-left-radius: $tl;
+    border-top-right-radius: $tr;
+    border-bottom-right-radius: $br;
+    border-bottom-left-radius: $lr;
+}
+
+@mixin shadow($x, $y, $blur, $spread, $opacity) {
+    -webkit-box-shadow: $x $y $blur $spread rgba(0,0,0,$opacity);
+    -moz-box-shadow: $x $y $blur $spread rgba(0,0,0,$opacity);
+    box-shadow: $x $y $blur $spread rgba(0,0,0,$opacity);
+}

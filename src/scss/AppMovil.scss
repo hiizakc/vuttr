@@ -1,0 +1,14 @@
+@media (max-width: 600px) {
+  #side-bar{
+    display: none;
+  }
+  #main-container {
+    padding-left: 0px;
+  }
+  .v-card {
+    width: 90%;
+  }
+  #add-button {
+    position: fixed;
+  }
+}
